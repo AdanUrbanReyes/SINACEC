@@ -1,0 +1,70 @@
+#avatar{
+	border-radius:100px;
+	display:block;
+	height:150px;
+	margin:0px auto 10px;
+	width:150px;
+}
+#logotipo{
+	display:block;
+	height:150px;
+	margin:10px auto 10px;
+	width:300px;
+}
+
+.selectedMall{
+    background: #82A64C;
+    box-shadow: 0px 0px 18px 0px rgba(48,50,50,0.48);
+    -moz-box-shadow: 0px 0px 18px 0px rgba(48,50,50,0.48);
+    -webkit-box-shadow: 0px 0px 18px 0px rgba(48,50,50,0.48);
+}
+
+.selectedRentedPlace{
+    background: #82A64C;
+    box-shadow: 0px 0px 18px 0px rgba(48,50,50,0.48);
+    -moz-box-shadow: 0px 0px 18px 0px rgba(48,50,50,0.48);
+    -webkit-box-shadow: 0px 0px 18px 0px rgba(48,50,50,0.48);
+}
+
+.localRentadoSeleccionado{
+    background: #82A64C;
+    box-shadow: 0px 0px 18px 0px rgba(48,50,50,0.48);
+    -moz-box-shadow: 0px 0px 18px 0px rgba(48,50,50,0.48);
+    -webkit-box-shadow: 0px 0px 18px 0px rgba(48,50,50,0.48);
+}
+
+#centroComercial{
+	box-shadow: 0px 0px 18px 0px rgba(48,50,50,0.48);
+	max-width:430px;
+	-moz-box-shadow: 0px 0px 18px 0px rgba(48,50,50,0.48);
+	-webkit-box-shadow: 0px 0px 18px 0px rgba(48,50,50,0.48);
+}
+
+#login{
+	box-shadow: 0px 0px 18px 0px rgba(48,50,50,0.48);
+	max-width:430px;
+	-moz-box-shadow: 0px 0px 18px 0px rgba(48,50,50,0.48);
+	-webkit-box-shadow: 0px 0px 18px 0px rgba(48,50,50,0.48);
+}
+
+.foreColorSINACEC{
+	color:#4C7F44;
+}
+.welcomeForeColor{
+	color:#E88B01;
+}
+.marginTop70px{
+    margin-top:70px;
+}
+.marginTop30px{
+    margin-top: 30px;
+}
+.imagenCRUD{
+    cursor: pointer;
+}
+.visible{
+   display:block;
+}
+.invisible{
+   display:none;
+}

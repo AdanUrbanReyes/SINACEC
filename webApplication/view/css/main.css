@@ -1,0 +1,14 @@
+#profilePicture{
+	display:block;
+	height:100%;
+	margin:10px auto 10px;
+	width:100%;
+}
+.inlineBlock{
+    float:none;
+    display: inline-block;
+    margin-right: -4px;
+}
+.quitarFloat{
+    float:none;
+}

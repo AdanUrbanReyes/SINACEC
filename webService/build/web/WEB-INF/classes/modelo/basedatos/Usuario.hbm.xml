@@ -1,0 +1,30 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<!-- Generated Nov 12, 2016 10:26:49 PM by Hibernate Tools 4.3.1 -->
+<hibernate-mapping>
+    <class name="modelo.basedatos.Usuario" table="usuario" catalog="sinacec" optimistic-lock="version">
+        <id name="cuenta" type="string">
+            <column name="cuenta" length="45" />
+            <generator class="assigned" />
+        </id>
+        <property name="clave" type="string">
+            <column name="clave" length="45" not-null="true" />
+        </property>
+        <property name="nombres" type="string">
+            <column name="nombres" length="30" not-null="true" />
+        </property>
+        <property name="primerApellido" type="string">
+            <column name="primer_apellido" length="30" not-null="true" />
+        </property>
+        <property name="segundoApellido" type="string">
+            <column name="segundo_apellido" length="30" />
+        </property>
+        <property name="imagen" type="binary">
+            <column name="imagen" not-null="true" />
+        </property>
+        <property name="tipo" type="char">
+            <column name="tipo" length="1" not-null="true" />
+        </property>
+    </class>
+</hibernate-mapping>

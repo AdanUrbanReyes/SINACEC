@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_mall"
+            android:icon="@drawable/home"
+            android:title="@string/mall" />
+        <item
+            android:id="@+id/nav_navigation"
+            android:icon="@drawable/navigation"
+            android:title="@string/navigation" />
+        <item
+            android:id="@+id/nav_search"
+            android:icon="@drawable/search"
+            android:title="@string/search" />
+        <item
+            android:id="@+id/nav_rentedShops"
+            android:icon="@drawable/shops"
+            android:title="@string/rentedPlaces" />
+        <item
+            android:id="@+id/nav_services"
+            android:icon="@drawable/services"
+            android:title="@string/services" />
+        <item
+            android:id="@+id/nav_selectionMall"
+            android:icon="@drawable/selection_mall"
+            android:title="@string/selectionMall" />
+
+        <item
+            android:id="@+id/nav_signIn"
+            android:icon="@drawable/sign_in"
+            android:title="@string/signIn" />
+
+        <item
+            android:id="@+id/nav_signOut"
+            android:icon="@drawable/sign_out"
+            android:title="@string/signOut"
+            android:visible="false"/>
+
+    </group>
+
+    <item android:title="@string/manager"
+        android:visible="false"
+        android:id="@+id/nav_manager">
+        <menu>
+            <item
+                android:id="@+id/nav_profileManager"
+                android:icon="@drawable/ic_menu_camera"
+                android:title="@string/profile" />
+            <item
+                android:id="@+id/nav_editionMall"
+                android:icon="@drawable/ic_menu_gallery"
+                android:title="@string/editionMall" />
+            <item
+                android:id="@+id/nav_areas"
+                android:icon="@drawable/ic_menu_slideshow"
+                android:title="@string/areas" />
+            <item
+                android:id="@+id/nav_shop"
+                android:icon="@drawable/ic_menu_manage"
+                android:title="@string/shops" />
+            <item
+                android:id="@+id/nav_recordsValidation"
+                android:icon="@drawable/ic_menu_share"
+                android:title="@string/recordsValidation" />
+
+        </menu>
+    </item>
+
+    <item android:title="@string/tenant"
+        android:visible="false"
+        android:id="@+id/nav_tenant">
+        <menu>
+            <item
+                android:id="@+id/nav_profileTenant"
+                android:icon="@drawable/ic_menu_camera"
+                android:title="@string/profile" />
+            <item
+                android:id="@+id/nav_editionRentedShop"
+                android:icon="@drawable/ic_menu_gallery"
+                android:title="@string/editionRentedShop" />
+            <item
+                android:id="@+id/nav_selectionRentedShop"
+                android:icon="@drawable/selection_shop"
+                android:title="@string/selectionRentedShop" />
+            <item
+                android:id="@+id/nav_productsManagement"
+                android:icon="@drawable/ic_menu_manage"
+                android:title="@string/products" />
+            <item
+                android:id="@+id/nav_servicesManagement"
+                android:icon="@drawable/ic_menu_share"
+                android:title="@string/services" />
+            <item
+                android:id="@+id/nav_offersManagement"
+                android:icon="@drawable/ic_menu_send"
+                android:title="@string/offers" />
+        </menu>
+    </item>
+
+</menu>

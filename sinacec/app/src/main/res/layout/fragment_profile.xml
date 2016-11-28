@@ -1,0 +1,84 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="ayan.sinacec.Profile">
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="@string/account"
+        android:textAlignment="center"
+        android:id="@+id/accountTV"
+        android:layout_margin="11dp"
+        android:layout_gravity="center_horizontal"
+        />
+
+    <ImageView
+        android:layout_width="350dp"
+        android:layout_height="200dp"
+        android:src="@drawable/ic_label_avatar"
+        android:layout_gravity="center_horizontal"
+        android:id="@+id/imageIV"/>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/key"
+        android:inputType="textPassword"
+        android:ems="10"
+        android:id="@+id/keyET"
+        android:layout_margin="11dp"
+        android:layout_gravity="center_horizontal" />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/names"
+        android:inputType="textPersonName"
+        android:ems="10"
+        android:id="@+id/namesET"
+        android:layout_margin="11dp"
+        android:layout_gravity="center_horizontal"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_margin="11dp">
+
+        <EditText
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:hint="@string/firstName"
+            android:inputType="textPersonName"
+            android:ems="10"
+            android:id="@+id/firstNameET"
+            android:layout_marginRight="5dp"
+            android:layout_gravity="center_horizontal"/>
+
+        <EditText
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:hint="@string/secondName"
+            android:inputType="textPersonName"
+            android:ems="10"
+            android:id="@+id/secondNameET"
+            android:layout_marginLeft="5dp"
+            android:layout_gravity="center_horizontal"/>
+
+    </LinearLayout>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/modify"
+        android:id="@+id/modifyB"
+        android:layout_gravity="right" />
+
+</LinearLayout>

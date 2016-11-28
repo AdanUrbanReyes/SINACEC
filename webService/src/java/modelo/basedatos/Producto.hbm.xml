@@ -1,0 +1,32 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<!-- Generated Nov 12, 2016 10:26:49 PM by Hibernate Tools 4.3.1 -->
+<hibernate-mapping>
+    <class name="modelo.basedatos.Producto" table="producto" catalog="sinacec" optimistic-lock="version">
+        <composite-id name="id" class="modelo.basedatos.ProductoId">
+            <key-property name="nombre" type="string">
+                <column name="nombre" length="30" />
+            </key-property>
+            <key-property name="local" type="string">
+                <column name="local" length="11" />
+            </key-property>
+            <key-property name="centroComercial" type="string">
+                <column name="centro_comercial" length="70" />
+            </key-property>
+            <key-property name="direccionCentroComercial" type="int">
+                <column name="direccion_centro_comercial" />
+            </key-property>
+        </composite-id>
+        <property name="descripcion" type="string">
+            <column name="descripcion" length="150" not-null="true" />
+        </property>
+        <property name="imagen" type="binary">
+            <column name="imagen" not-null="true" />
+        </property>
+    </class>
+    <sql-query name="search_products">
+        <return alias="producto" class="modelo.basedatos.Producto"/>
+        <![CDATA[CALL search_products(?,?,?,?)]]>
+    </sql-query>
+</hibernate-mapping>

@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-configuration PUBLIC "-//Hibernate/Hibernate Configuration DTD 3.0//EN" "http://hibernate.sourceforge.net/hibernate-configuration-3.0.dtd">
+<hibernate-configuration>
+  <session-factory>
+    <property name="hibernate.dialect">org.hibernate.dialect.MySQLDialect</property>
+    <property name="hibernate.connection.driver_class">com.mysql.jdbc.Driver</property>
+    <property name="hibernate.connection.url">jdbc:mysql://localhost:3306/sinacec</property>
+    <property name="hibernate.connection.username">root</property>
+    <property name="hibernate.connection.password">A1y3a1n7?</property>
+    <property name="hibernate.c3p0.min_size">1</property>
+    <property name="hibernate.show_sql">true</property>
+    <mapping resource="modelo/basedatos/Puerta.hbm.xml"/>
+    <mapping resource="modelo/basedatos/Local.hbm.xml"/>
+    <mapping resource="modelo/basedatos/RegistroLocatario.hbm.xml"/>
+    <mapping resource="modelo/basedatos/CentroComercial.hbm.xml"/>
+    <mapping resource="modelo/basedatos/Servicio.hbm.xml"/>
+    <mapping resource="modelo/basedatos/Oferta.hbm.xml"/>
+    <mapping resource="modelo/basedatos/Usuario.hbm.xml"/>
+    <mapping resource="modelo/basedatos/LocalRentado.hbm.xml"/>
+    <mapping resource="modelo/basedatos/CodigoPostal.hbm.xml"/>
+    <mapping resource="modelo/basedatos/Area.hbm.xml"/>
+    <mapping resource="modelo/basedatos/Direccion.hbm.xml"/>
+    <mapping resource="modelo/basedatos/Producto.hbm.xml"/>
+  </session-factory>
+</hibernate-configuration>

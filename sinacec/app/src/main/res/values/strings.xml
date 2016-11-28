@@ -1,0 +1,111 @@
+<resources>
+    <string name="app_name">SINACEC</string>
+    <string name="contact">sinacec@ayan.com</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <!-- To fragment_settings -->
+    <string name="action_settings">Configuracion</string>
+    <string name="hostWebService">IP Web Service</string>
+    <string name="portWebService">Puerto Web Service</string>
+    <string name="pathWebService">Path Web Service</string>
+    <string name="namespaceWebService">Espacio de nombres Web Service</string>
+    <string name="save">Guardar</string>
+    <!-- To activity_sinacec_drawer -->
+    <string name="mall">Centro Comercial</string>
+    <string name="navigation">Navegacion</string>
+    <string name="search">Busqueda</string>
+    <string name="rentedPlaces">Locales</string>
+    <string name="services">Servicios</string>
+    <string name="selectionMall">Seleccion Centro Comercial</string>
+    <string name="signIn">Inicio Sesion</string>
+    <string name="signOut">Cerrar Sesion</string>
+    <string name="manager">Administrador</string>
+    <string name="profile">Perfil</string>
+    <string name="editionMall">Edicion Centro Comercial</string>
+    <string name="areas">Areas</string>
+    <string name="shops">Locales</string>
+    <string name="recordsValidation">Validacion Registros</string>
+    <string name="tenant">Locatario</string>
+    <string name="editionRentedShop">Edicion de Local</string>
+    <string name="selectionRentedShop">Seleccion de Local</string>
+    <string name="products">Productos</string>
+    <string name="offers">Ofertas</string>
+
+    <!-- To fragment_mall-->
+    <string name="address">Direccion</string>
+    <string name="opening">Horario Apertura</string>
+    <string name="closing">Horario Cierre</string>
+    <string name="webSide">Sitio WEB</string>
+    <string name="phone">Telefono</string>
+    <string name="loadMallImage">Cargar imagen del Centro Comercial</string>
+
+    <!--To fragment_search-->
+    <string name="keyWord">Palabra Clave</string>
+    <string name="shop">Local</string>
+    <string name="service">Servicio</string>
+    <string name="product">Producto</string>
+
+    <!-- To fragment_rented_shop -->
+    <string name="name">Nombre</string>
+
+    <!-- To fragment_service -->
+    <string name="description">Descripcion</string>
+
+    <!-- To fragment_sign_in-->
+    <string name="account">Cuenta</string>
+    <string name="key">Clave</string>
+    <string name="signUp">No estas registrado?</string>
+    <string name="init">Iniciar</string>
+
+    <!-- To fragment_sign_up_tenant -->
+    <string name="names">Nombre(s)</string>
+    <string name="firstName">Primer Apellido</string>
+    <string name="secondName">Segundo Apellido</string>
+    <string name="id">ID</string>
+    <string name="twist">Giro</string>
+    <string name="shopName">Nombre del Local</string>
+    <string name="send">Enviar</string>
+    <string name="loadProfileImage">Cargar foto de perfil</string>
+    <string name="loadShopImage">Cargar imagen del Local</string>
+    <string name="accept">Aceptar</string>
+    <string name="reject">Rechazar</string>
+
+    <!-- To fragment_profile -->
+    <string name="modify">Modificar</string>
+
+    <!-- To fragment_shops_management -->
+    <string name="delete">Eliminar</string>
+    <string name="status">Estatus</string>
+    <string name="area">Area</string>
+
+    <!-- To fragment_shop -->
+    <string name="doorsManagement">Administracion de puertas</string>
+
+    <!-- To fragment_doors-->
+    <string name="latitud">Latitud</string>
+    <string name="longitud">Longitud</string>
+    <string name="indoorAtlas">Indoor Atlas</string>
+    <string name="type">Tipo</string>
+    <!-- To fragment_areas_management -->
+    <string name="loadAreaImage">Cargar imagen del Area</string>
+
+    <!-- To fragment_sign_up_tenant_validation -->
+    <string name="before">Anterior</string>
+    <string name="next">Siguiente</string>
+
+    <!-- To fragment_products_management -->
+    <string name="loadProductImage">Cargar imagen del Producto</string>
+
+    <!-- To fragment_services_management -->
+    <string name="loadServiceImage">Cargar imagen del Servicio</string>
+
+    <!-- To fragment_offers_management -->
+    <string name="startDate">Fecha Inicio</string>
+    <string name="endDate">Fecha Expiracion</string>
+    <string name="loadOfferImage">Cargar imagen de la Oferta</string>
+
+</resources>

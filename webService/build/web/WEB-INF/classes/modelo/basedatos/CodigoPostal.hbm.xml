@@ -1,0 +1,24 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<!-- Generated Nov 12, 2016 10:26:49 PM by Hibernate Tools 4.3.1 -->
+<hibernate-mapping>
+    <class name="modelo.basedatos.CodigoPostal" table="codigo_postal" catalog="sinacec" optimistic-lock="version">
+        <id name="id" type="java.lang.Integer">
+            <column name="id" />
+            <generator class="identity" />
+        </id>
+        <property name="codigo" type="int">
+            <column name="codigo" not-null="true" />
+        </property>
+        <property name="estado" type="string">
+            <column name="estado" length="100" not-null="true" />
+        </property>
+        <property name="municipio" type="string">
+            <column name="municipio" length="100" not-null="true" />
+        </property>
+        <property name="asentamiento" type="string">
+            <column name="asentamiento" length="100" not-null="true" />
+        </property>
+    </class>
+</hibernate-mapping>

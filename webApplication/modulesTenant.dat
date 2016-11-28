@@ -1,0 +1,6 @@
+{"name" : "Mi perfil", "image" : "profile.png", "link" : "Profile_controller/profile"}
+{"name" : "Mi local", "image" : "editionPlace.png", "link" : "RentedPlace_controller/myRentedPlace"}
+{"name" : "Seleccion local", "image" : "selectionPlace.png", "link" : "RentedPlace_controller/selection"}
+{"name" : "Mis Productos", "image" : "productsManagement.png", "link" : "Products_controller/products"}
+{"name" : "Mis Servicios", "image" : "servicesManagement.png", "link" : "Services_controller/services"}
+{"name" : "Mis Ofertas", "image" : "offersManagement.png", "link" : "Offers_controller/offers"}

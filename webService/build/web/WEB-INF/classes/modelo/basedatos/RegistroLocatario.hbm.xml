@@ -1,0 +1,61 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<!-- Generated Nov 12, 2016 10:26:49 PM by Hibernate Tools 4.3.1 -->
+<hibernate-mapping>
+    <class name="modelo.basedatos.RegistroLocatario" table="registro_locatario" catalog="sinacec" optimistic-lock="version">
+        <id name="cuenta" type="string">
+            <column name="cuenta" length="45" />
+            <generator class="assigned" />
+        </id>
+        <property name="local" type="string">
+            <column name="local" length="11" not-null="true" />
+        </property>
+        <property name="centroComercial" type="string">
+            <column name="centro_comercial" length="70" not-null="true" />
+        </property>
+        <property name="direccionCentroComercial" type="int">
+            <column name="direccion_centro_comercial" not-null="true" />
+        </property>
+        <property name="clave" type="string">
+            <column name="clave" length="45" not-null="true" />
+        </property>
+        <property name="nombres" type="string">
+            <column name="nombres" length="30" not-null="true" />
+        </property>
+        <property name="primerApellido" type="string">
+            <column name="primer_apellido" length="30" not-null="true" />
+        </property>
+        <property name="segundoApellido" type="string">
+            <column name="segundo_apellido" length="30" not-null="true" />
+        </property>
+        <property name="imagen" type="binary">
+            <column name="imagen" not-null="true" />
+        </property>
+        <property name="nombreLocal" type="string">
+            <column name="nombre_local" length="50" not-null="true" />
+        </property>
+        <property name="giro" type="string">
+            <column name="giro" length="50" not-null="true" />
+        </property>
+        <property name="horarioApertura" type="time">
+            <column name="horario_apertura" length="8" not-null="true" />
+        </property>
+        <property name="horarioCierre" type="time">
+            <column name="horario_cierre" length="8" not-null="true" />
+        </property>
+        <property name="telefono" type="string">
+            <column name="telefono" length="13" />
+        </property>
+        <property name="sitioWeb" type="string">
+            <column name="sitio_web" length="70" />
+        </property>
+        <property name="imagenLocal" type="binary">
+            <column name="imagen_local" not-null="true" />
+        </property>
+    </class>
+    <sql-query name="sign_up_validator">
+        <return alias="registro_locatario" class="modelo.basedatos.RegistroLocatario"/>
+        <![CDATA[CALL sign_up_validator(?, ?)]]>
+    </sql-query>
+</hibernate-mapping>

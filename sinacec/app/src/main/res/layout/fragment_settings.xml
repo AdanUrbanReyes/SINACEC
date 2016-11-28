@@ -1,0 +1,67 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="ayan.sinacec.Settings"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="@string/action_settings"
+        android:layout_gravity="center_horizontal"
+        android:layout_margin="11dp"/>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/hostWebService"
+        android:layout_margin="11dp"
+        android:inputType="textWebEditText"
+        android:ems="10"
+        android:id="@+id/hostET"
+        />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint="@string/portWebService"
+            android:layout_margin="11dp"
+            android:inputType="number"
+            android:ems="10"
+            android:id="@+id/portET"
+            />
+    </LinearLayout>
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/pathWebService"
+        android:layout_margin="11dp"
+        android:inputType="textWebEditText"
+        android:ems="10"
+        android:id="@+id/pathET"
+        />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/namespaceWebService"
+        android:layout_margin="11dp"
+        android:inputType="textWebEditText"
+        android:ems="10"
+        android:id="@+id/namespaceET"
+        />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/save"
+        android:id="@+id/saveB"
+        android:layout_gravity="right"/>
+
+
+</LinearLayout>

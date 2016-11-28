@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-reverse-engineering PUBLIC "-//Hibernate/Hibernate Reverse Engineering DTD 3.0//EN" "http://hibernate.sourceforge.net/hibernate-reverse-engineering-3.0.dtd">
+<hibernate-reverse-engineering>
+  <schema-selection match-catalog="sinacec"/>
+  <table-filter match-name="codigo_postal"/>
+  <table-filter match-name="registro_locatario"/>
+  <table-filter match-name="area"/>
+  <table-filter match-name="usuario"/>
+  <table-filter match-name="servicio"/>
+  <table-filter match-name="oferta"/>
+  <table-filter match-name="local_rentado"/>
+  <table-filter match-name="producto"/>
+  <table-filter match-name="centro_comercial"/>
+  <table-filter match-name="puerta"/>
+  <table-filter match-name="direccion"/>
+  <table-filter match-name="local"/>
+</hibernate-reverse-engineering>

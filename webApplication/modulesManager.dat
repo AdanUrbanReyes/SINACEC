@@ -1,0 +1,6 @@
+{"name" : "Mi perfil", "image" : "profile.png", "link" : "Profile_controller/profile"}
+{"name" : "Mi centro comercial", "image" : "editionMall.png", "link" : "Mall_controller/myMall"}
+{"name" : "Seleccion centro comercial", "image" : "selectionMall.png", "link" : "Mall_controller/selection"}
+{"name" : "Administracion areas", "image" : "managementAreas.png", "link":"Areas_controller/areas"}
+{"name" : "Administracion locales", "image" : "managementPlaces.png", "link":"Places_controller/places"}
+{"name" : "Validacion Registros", "image" : "signUpValidation.png", "link":"SignUp_controller/validation"}

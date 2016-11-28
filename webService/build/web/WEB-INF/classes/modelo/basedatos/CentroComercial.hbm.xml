@@ -1,0 +1,38 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<!-- Generated Nov 12, 2016 10:26:49 PM by Hibernate Tools 4.3.1 -->
+<hibernate-mapping>
+    <class name="modelo.basedatos.CentroComercial" table="centro_comercial" catalog="sinacec" optimistic-lock="version">
+        <composite-id name="id" class="modelo.basedatos.CentroComercialId">
+            <key-property name="nombre" type="string">
+                <column name="nombre" length="70" />
+            </key-property>
+            <key-property name="direccion" type="int">
+                <column name="direccion" />
+            </key-property>
+        </composite-id>
+        <property name="administrador" type="string">
+            <column name="administrador" length="45" not-null="true" />
+        </property>
+        <property name="horarioApertura" type="time">
+            <column name="horario_apertura" length="8" not-null="true" />
+        </property>
+        <property name="horarioCierre" type="time">
+            <column name="horario_cierre" length="8" not-null="true" />
+        </property>
+        <property name="imagen" type="binary">
+            <column name="imagen" not-null="true" />
+        </property>
+        <property name="telefono" type="string">
+            <column name="telefono" length="13" />
+        </property>
+        <property name="sitioWeb" type="string">
+            <column name="sitio_web" length="70" />
+        </property>
+    </class>
+    <sql-query name="malls_tenant">
+        <return alias="centroComercial" class="modelo.basedatos.CentroComercial"/>
+        <![CDATA[CALL malls_tenant(?)]]>
+    </sql-query>
+</hibernate-mapping>

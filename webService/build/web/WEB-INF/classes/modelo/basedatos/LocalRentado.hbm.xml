@@ -1,0 +1,47 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<!-- Generated Nov 12, 2016 10:26:49 PM by Hibernate Tools 4.3.1 -->
+<hibernate-mapping>
+    <class name="modelo.basedatos.LocalRentado" table="local_rentado" catalog="sinacec" optimistic-lock="version">
+        <composite-id name="id" class="modelo.basedatos.LocalRentadoId">
+            <key-property name="local" type="string">
+                <column name="local" length="11" />
+            </key-property>
+            <key-property name="centroComercial" type="string">
+                <column name="centro_comercial" length="70" />
+            </key-property>
+            <key-property name="direccionCentroComercial" type="int">
+                <column name="direccion_centro_comercial" />
+            </key-property>
+        </composite-id>
+        <property name="locatario" type="string">
+            <column name="locatario" length="45" not-null="true" />
+        </property>
+        <property name="nombre" type="string">
+            <column name="nombre" length="50" not-null="true" />
+        </property>
+        <property name="giro" type="string">
+            <column name="giro" length="50" not-null="true" />
+        </property>
+        <property name="horarioApertura" type="time">
+            <column name="horario_apertura" length="8" not-null="true" />
+        </property>
+        <property name="horarioCierre" type="time">
+            <column name="horario_cierre" length="8" not-null="true" />
+        </property>
+        <property name="telefono" type="string">
+            <column name="telefono" length="13" />
+        </property>
+        <property name="sitioWeb" type="string">
+            <column name="sitio_web" length="70" />
+        </property>
+        <property name="imagen" type="binary">
+            <column name="imagen" not-null="true" />
+        </property>
+    </class>
+    <sql-query name="search_rented_shops">
+        <return alias="local_rentado" class="modelo.basedatos.LocalRentado"/>
+        <![CDATA[CALL search_rented_shops(?,?,?,?)]]>
+    </sql-query>
+</hibernate-mapping>
